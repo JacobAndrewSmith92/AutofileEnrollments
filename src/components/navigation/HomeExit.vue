@@ -1,19 +1,19 @@
 <template>
   <div class="nav--bar">
-    <img id="header--logo" alt="Vue logo" src="../../assets/TaxJarLogos/taxjar-plus-logotype.png">
-    <SomeFile/>
+    <a href="https://www.taxjar.com/"><img id="header--logo" alt="Vue logo" src="../../assets/TaxJarLogos/taxjar-plus-logotype.png"></a>
+    <NavBreadcrumbs/>
     <a href="/">Save and Exit</a>
   </div>
 </template>
 
 <script>
-  import SomeFile from './SetupTask.vue'
+  import NavBreadcrumbs from './NavBreadCrumbs';
   export default {
     // props: {
       
     // }
     components: {
-      SomeFile
+      NavBreadcrumbs
     }
   }
 </script>

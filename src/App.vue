@@ -3,19 +3,38 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <HomeExit />
+    <SetupTask payload />
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import HomeExit from './components/navigation/HomeExit';
+import SetupTask from './components/navigation/SetupTask';
+import ApiManager from './tools/managers/ApiManager.js';
+
 export default {
   name: 'app',
   components: {
-    HomeExit
+    HomeExit,
+    SetupTask,
+  },
+
+  data () {
+    return {
+      payload: null
+    }
+  },
+
+  mounted() {
+    ApiManager.getData()
+    .then(response => response.json())
+    .then(payload => {
+      (this.payload = payload)
+    }) 
   }
 }
 </script>
+
 
 <style>
 #app {
