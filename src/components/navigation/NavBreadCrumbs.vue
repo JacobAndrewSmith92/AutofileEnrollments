@@ -1,24 +1,29 @@
 <template>
   <div class="breadcrumbs">
-    <a>Step 1</a>
-    <a>Step 2</a>
-    <a>Step 3</a>
-    <a>Step 4</a>
+    <!-- WIP: Need to refactor -->
+    <span>{{onStep ? '1. Setup tasks' : null}} </span>
+    <strong>{{!onStep ? '1. Setup tasks' : null}} </strong>
+    <span>2. State from</span>
+    <span>3. Enrollment start</span>
+    <span>4. Review and submit</span>
+    
   </div>
 </template>
 
 <script>
-  export default {}
+  export default {
+    props: ['onStep']
+  }
 </script>
 
 <style scoped>
   .breadcrumbs {
     display: flex;
   }
-  .breadcrumbs a {
+  .breadcrumbs span, strong  {
       padding-right: 40px;
   }
-  .breadcrumbs a:last-child {
+  .breadcrumbs span:last-child {
     padding-right: 0;
   }
 </style>

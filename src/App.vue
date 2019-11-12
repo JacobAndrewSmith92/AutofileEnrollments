@@ -2,8 +2,8 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <HomeExit />
-    <SetupTask payload />
+    <HomeExit :onStep=onStep />
+    <SetupTask :payload=payload />
   </div>
 </template>
 
@@ -19,11 +19,12 @@ export default {
     SetupTask,
   },
 
-  data () {
+  data() {
     return {
-      payload: null
-    }
-  },
+      payload: '',
+      onStep: false
+  }
+},
 
   mounted() {
     ApiManager.getData()
@@ -45,10 +46,19 @@ export default {
   color: #2c3e50;
   margin: 0 -1em 0 -1em;
   height: 100vh;
-  background-color: #FDFDFF;
+  background-color: rgba(211,211,211, .1);
+  text-align: center;
 }
 a {
   text-decoration: none;
   color: #55565A;
+}
+button {
+  background-color: #3FAE2A;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  height: 36px;
+  width: 108px;
 }
 </style>

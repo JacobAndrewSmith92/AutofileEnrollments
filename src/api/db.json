@@ -1,6 +1,20 @@
 {
   "allData": {
     "complete_account_setup": "Complete your account setup tasks",
-    "complete_account_details": "Please complete the following one-time tasks, which will be used by all states enrolled in AutoFile"
+    "complete_account_details": "Please complete the following one-time tasks, which will be used by all states enrolled in AutoFile",
+    "how_it_works": {
+      "learn_how": "Learn how TaxJar's Autofile service works",
+      "learn_how_details": "To ensure that you get the most out of AutoFile, we put together a short video to explain how the service works.",
+      "learn_how_video": "In this video, you'll learn",
+      "learn_how_video_step1": "How to successfully enroll your first state in AutoFile",
+      "learn_how_video_step2": "Once enrolled, what you need to do to prepare your account for a filing",
+      "learn_how_video_step3": "How Filing Experts ensure that you're paying the correct amount of sales tax",
+      "learn_how_video_after": "Once you're ready, click below to continue setting up your AutoFile account."
+    },
+    "helpful_hints": {
+      "title": "Helpful Hints",
+      "how_much": "How much does AutoFile cost?",
+      "how_much_answer": "Based on your TaxJar plan, AutoFile will cost $25 per filing, and you can receive discounts by upgrading to an ?annual plan or by ?purchasing credits"
+    }
   }
 }
