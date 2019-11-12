@@ -4,10 +4,9 @@
     <h2>{{payload.how_it_works.learn_how}}</h2>
     <div>{{payload.how_it_works.learn_how_details}} {{payload.how_it_works.learn_how_video}}:</div>
     <ul class="how--to--list">
-
-    <div>1. {{payload.how_it_works.learn_how_video_step1}}</div>
-    <div>2. {{payload.how_it_works.learn_how_video_step2}}</div>
-    <div>3. {{payload.how_it_works.learn_how_video_step3}}</div>
+      <div><span class="list--numbers">1.</span> {{payload.how_it_works.learn_how_video_step1}}</div>
+      <div><span class="list--numbers">2.</span> {{payload.how_it_works.learn_how_video_step2}}</div>
+      <div><span class="list--numbers">3.</span> {{payload.how_it_works.learn_how_video_step3}}</div>
     </ul>
     <div>{{payload.how_it_works.learn_how_video_after}}</div>
     <button>Continue</button>
@@ -28,8 +27,17 @@ export default {
 
 <style scoped>
 
+  .list--numbers {
+    background-color: lightgrey;
+    padding:4px;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: -16px;
+  }
+
   .how--to--list > div {
     text-align: left;
+    margin-bottom: 16px;
   }
 
   .container {
