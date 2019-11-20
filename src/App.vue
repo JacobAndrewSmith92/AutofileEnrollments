@@ -9,7 +9,7 @@
 
 <script>
 import HomeExit from './components/navigation/HomeExit';
-import SetupTask from './components/navigation/SetupTask';
+import SetupTask from './components/SetupTask';
 import ApiManager from './tools/managers/ApiManager.js';
 
 export default {

@@ -32,6 +32,7 @@
     height: 48px;
     border-bottom: 1px solid #9955565A;
     background-color: white;
+    margin-bottom: 40px;
   }
 </style>
 
