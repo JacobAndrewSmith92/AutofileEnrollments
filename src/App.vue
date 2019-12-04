@@ -1,22 +1,33 @@
 <template>
-  <div id="app">
+  <!-- <div id="app"> -->
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <!-- <SetupTask :payload=payload /> -->
+  <!-- </div> -->
+  <div id="app">
     <HomeExit :onStep=onStep />
-    <SetupTask :payload=payload />
+    <nav>
+      <router-link to="/">Home</router-link>
+      <router-link to="/login">Login</router-link>
+      <router-link to="/about">About</router-link>
+      <router-link to="/setup-tasks">Setup Tasks</router-link>
+      <router-link to="/hello-world">Hello World </router-link>
+      <router-link to="/about">About</router-link>
+    </nav>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import HomeExit from './components/navigation/HomeExit';
-import SetupTask from './components/SetupTask';
+// import SetupTask from './components/SetupTask';
 import ApiManager from './tools/managers/ApiManager.js';
 
 export default {
   name: 'app',
   components: {
     HomeExit,
-    SetupTask,
+    // SetupTask,
   },
 
   data() {

@@ -15,8 +15,8 @@
         <span class="after--video">{{payload.how_it_works.learn_how_video_after}}</span>
       <div>
       </div>
-      <button class="continue--btn" v-on:click="routeTest">Continue</button>
-      <router-link to='hello-world'>Hello World</router-link>
+      <button class="continue--btn" v-on:click="$emit('how-it')"> Continue</button>
+      <!-- <router-link to='hello-world'>Hello World</router-link> -->
     </div>
     <div class="helpful--hints">
       <h4 class="hh--title">{{payload.helpful_hints.title}}</h4>
@@ -28,14 +28,18 @@
 </template>
 
 <script>
+// import BusinessProfile from './BusinessProfile';
+
 export default {
+  name: 'HowItWorks',
   props: ['payload'],
 
-  methods: {
-    routeTest: function () {
-      alert("Hello");
-    }
+  components: {
+    // BusinessProfile
   },
+
+  methods: {
+  }
 }
 </script>
 
